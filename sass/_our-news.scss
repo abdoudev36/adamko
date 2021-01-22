@@ -4,14 +4,14 @@
     .container {
         .items-box {
             .item {
-                height: 400px;
+                height: 380px;
                 width: 31.333%;
                 overflow: hidden;
 
                 .img {
-                    background-image: linear-gradient(to right, #75082e, #730681);
-                    z-index: 1;
-                    
+                    height: 200px;
+                    background-color: $c-dark;
+
                     img {
                         background-size: cover;
                         background-position: center;
@@ -19,9 +19,12 @@
                     }
                 }
 
-                .info {
-                    z-index: 2;
+                .title {
+                    font-size: 1.3rem;
+                    color: $c-dark;
+                    font-family: $f-head;
                 }
+
             }
         }
     }
