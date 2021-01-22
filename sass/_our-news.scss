@@ -1,0 +1,28 @@
+.our-news {
+    background-color: $c-white-2;
+
+    .container {
+        .items-box {
+            .item {
+                height: 400px;
+                width: 31.333%;
+                overflow: hidden;
+
+                .img {
+                    background-image: linear-gradient(to right, #75082e, #730681);
+                    z-index: 1;
+                    
+                    img {
+                        background-size: cover;
+                        background-position: center;
+                        opacity: 0.7;
+                    }
+                }
+
+                .info {
+                    z-index: 2;
+                }
+            }
+        }
+    }
+}

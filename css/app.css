@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap");
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+section.page-section {
+  padding: 5rem 0;
+}
+
+.text-intro {
+  background-color: white;
+  height: 100px;
+  border-radius: 60px;
+  padding-left: 1rem;
+}
+.text-intro .icon {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #e8833b;
+}
+.text-intro .icon img {
+  width: 40px;
+  background-size: cover;
+  background-position: center;
+}
+.text-intro h3 {
+  font-size: 1.4rem;
+  font-family: "Merriweather", sans-serif;
+  color: #2f3e46;
+}
+
+.main-header {
+  height: 100vh;
+}
+.main-header .main-navbar {
+  height: 70px;
+  background-color: white;
+}
+.main-header .main-navbar .logo {
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 0.7px;
+  color: #e8833b;
+}
+.main-header .main-navbar .navbar-list .nav-link {
+  color: #2f3e46;
+  margin-left: 0.7rem;
+}
+.main-header .main-navbar .navbar-list .nav-link:hover {
+  color: #e8833b;
+}
+.main-header .main-navbar .navbar-list .nav-link:last-of-type {
+  width: 100px;
+  height: 45px;
+  background-color: #2f3e46;
+  color: white;
+}
+.main-header .banner {
+  height: calc(100vh - 70px);
+  background-image: url("../img/banner3.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  background-attachment: fixed;
+}
+.main-header .banner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  -ms-backdrop-filter: blur(10px);
+  -o-backdrop-filter: blur(10px);
+  opacity: 0.85;
+}
+.main-header .banner .container .text {
+  width: 60%;
+  position: relative;
+  z-index: 3;
+}
+.main-header .banner .container .text h1 {
+  color: #2f3e46;
+  line-height: 1.5;
+  font-family: "Merriweather", sans-serif;
+}
+.main-header .banner .container .text h1 span:first-of-type {
+  font-size: 1.5rem;
+}
+.main-header .banner .container .text h1 span:first-of-type::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 70px;
+  height: 2px;
+  border-bottom: 1px solid #2f3e46;
+}
+.main-header .banner .container .text h1 span:last-of-type {
+  font-size: 2rem;
+}
+.main-header .banner .container .text p {
+  line-height: 1.7;
+}
+.main-header .banner .container .buttons .link {
+  width: 140px;
+  height: 45px;
+}
+.main-header .banner .container .buttons .link:first-of-type {
+  background-color: #e8833b;
+  color: white;
+}
+.main-header .banner .container .buttons .link:last-of-type {
+  background-color: #2f3e46;
+  color: white;
+}
+.main-header .scroll-down {
+  bottom: 0.5rem;
+  left: 50%;
+  background-color: #e8833b;
+  width: 27px;
+  height: 40px;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.about-me {
+  background-color: #fcfcfd;
+}
+.about-me .container .img {
+  width: 430px;
+  height: 460px;
+}
+.about-me .container .img img {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 2;
+}
+.about-me .container .img::after {
+  content: "";
+  position: absolute;
+  height: 70%;
+  width: 70%;
+  background: radial-gradient(#e8833b 1px, transparent 1px);
+  top: -27px;
+  left: -27px;
+  background-size: 12px 12px;
+  z-index: 1;
+}
+.about-me .container .img::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #f5b84838;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+}
+.about-me .container .text {
+  flex: 1;
+}
+.about-me .container .text h3, .about-me .container .text h4 {
+  font-family: "Merriweather", sans-serif;
+}
+.about-me .container .text h3 {
+  color: #2f3e46;
+  font-size: 1.5rem;
+}
+.about-me .container .text h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  width: 40px;
+  height: 2px;
+  background-color: #e8833b;
+}
+.about-me .container .text h4 {
+  line-height: 1.3;
+  font-size: 2.2rem;
+}
+.about-me .container .text p {
+  line-height: 1.8;
+}
+.about-me .container .text .buttons a {
+  width: 150px;
+  height: 45px;
+  background-color: #e8833b;
+  color: white;
+}
+.about-me .container .text .buttons a:first-of-type {
+  color: #e8833b;
+  background-color: white;
+  border: 1px solid;
+}
+
+.about-me {
+  background-color: #fcfcfd;
+}
+.about-me .container .img {
+  width: 430px;
+  height: 460px;
+}
+.about-me .container .img img {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 2;
+}
+.about-me .container .img::after {
+  content: "";
+  position: absolute;
+  height: 70%;
+  width: 70%;
+  background: radial-gradient(#e8833b 1px, transparent 1px);
+  top: -27px;
+  left: -27px;
+  background-size: 12px 12px;
+  z-index: 1;
+}
+.about-me .container .img::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #f5b84838;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+}
+.about-me .container .text {
+  flex: 1;
+}
+.about-me .container .text h3, .about-me .container .text h4 {
+  font-family: "Merriweather", sans-serif;
+}
+.about-me .container .text h3 {
+  color: #2f3e46;
+  font-size: 1.5rem;
+}
+.about-me .container .text h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  width: 40px;
+  height: 2px;
+  background-color: #e8833b;
+}
+.about-me .container .text h4 {
+  line-height: 1.3;
+  font-size: 2.2rem;
+}
+.about-me .container .text p {
+  line-height: 1.8;
+}
+.about-me .container .text .buttons a {
+  width: 150px;
+  height: 45px;
+  background-color: #e8833b;
+  color: white;
+}
+.about-me .container .text .buttons a:first-of-type {
+  color: #e8833b;
+  background-color: white;
+  border: 1px solid;
+}
+
+.our-services {
+  background-color: #f6f6f9;
+}
+.our-services .container .content .item {
+  height: 300px;
+  width: 32.333%;
+  background-color: #fcfcfd;
+}
+.our-services .container .content .item:nth-of-type(2) .icon {
+  background-color: #e8833b;
+}
+.our-services .container .content .item:nth-of-type(3) .icon {
+  background-color: #e8cb3b;
+}
+.our-services .container .content .item .icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 2rem;
+  background-color: #e8433bfc;
+  color: white;
+}
+.our-services .container .content .item h3 {
+  font-size: 1.2rem;
+  font-family: "Merriweather", sans-serif;
+  color: #2f3e46;
+}
+.our-services .container .content .item p {
+  color: #2f3e46;
+  line-height: 1.8;
+}
+.our-services .subscribe {
+  height: 250px;
+  background-image: url("../img/subscribe.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+.our-services .subscribe::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  -ms-backdrop-filter: blur(10px);
+  -o-backdrop-filter: blur(10px);
+  opacity: 0.8;
+}
+.our-services .subscribe .container {
+  position: relative;
+  z-index: 3;
+}
+.our-services .subscribe .container h3 {
+  color: #2f3e46;
+}
+.our-services .subscribe .container .form-groups .form-control, .our-services .subscribe .container .form-groups button {
+  height: 50px;
+}
+.our-services .subscribe .container .form-groups .form-control {
+  border-color: #e8833b;
+}
+.our-services .subscribe .container .form-groups .form-control:focus {
+  box-shadow: 0px 0px 0px 3px rgba(232, 131, 59, 0.5);
+}
+.our-services .subscribe .container .form-groups button {
+  background-color: #e8833b;
+  color: white;
+  width: 130px;
+}
+
+.our-news {
+  background-color: #fcfcfd;
+}
+.our-news .container .items-box .item {
+  height: 400px;
+  width: 31.333%;
+  overflow: hidden;
+}
+.our-news .container .items-box .item .img {
+  background-image: linear-gradient(to right, #75082e, #730681);
+  z-index: 1;
+}
+.our-news .container .items-box .item .img img {
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+.our-news .container .items-box .item .info {
+  z-index: 2;
+}
+
+/*# sourceMappingURL=app.css.map */

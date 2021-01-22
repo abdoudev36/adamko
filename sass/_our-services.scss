@@ -1,0 +1,100 @@
+.our-services {
+    background-color: darken($c-white-2, 2%);
+
+    .container {
+        .content {
+            .item {
+                height: 300px;
+                width: 32.333%;
+                background-color: $c-white-2;
+
+                &:nth-of-type(2) {
+                    .icon {
+                        background-color: $c-main;
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    .icon {
+                        background-color: #e8cb3b;
+                    }
+                }
+
+                .icon {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    font-size: 2rem;
+                    background-color: #e8433bfc;
+                    color: $c-white;
+                }
+
+                h3 {
+                    font-size: 1.2rem;
+                    font-family: $f-head;
+                    color: $c-dark;
+                }
+
+                p {
+                    color: $c-dark;
+                    line-height: 1.8;
+                }
+            }
+        }
+    }
+
+    .subscribe {
+        height: 250px;
+        background-image: url('../img/subscribe.jpg');
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        background-attachment: fixed;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $c-white;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            -moz-backdrop-filter: blur(10px);
+            -ms-backdrop-filter: blur(10px);
+            -o-backdrop-filter: blur(10px);
+            opacity: 0.8;
+        }
+
+        .container {
+            position: relative;
+            z-index: 3;
+
+            h3 {
+                color: $c-dark;
+            }
+
+            .form-groups {
+                .form-control, button {
+                    height: 50px;
+                }
+
+                .form-control{
+                    border-color: $c-main;
+
+                    &:focus {
+                        box-shadow: 0px 0px 0px 3px rgba($c-main, 0.5);
+                    }
+                }
+
+                button {
+                    background-color: $c-main;
+                    color: $c-white;
+                    width: 130px;
+                }
+            }
+        }
+
+    }
+}
