@@ -1,0 +1,58 @@
+// Contact us
+.contact-us {
+    background-color: $c-white;
+
+    .contact-details {
+        width: 50%;
+        
+        .item {
+            min-height: 80px;
+            border-radius: 50px;
+
+            div {
+                .icon {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+    .contact-form {
+        width: 50%;
+        padding: 1rem;
+
+        h3 {
+            font-size: 1.3rem;
+            font-family: $f-head;
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+
+            .form-control {
+                height: 50px;
+
+                &::placeholder {
+                    text-transform: capitalize;
+                }
+
+                &:focus {
+                    box-shadow: 0px 0px 0px 3px rgba($c-main, 0.5);
+                    border-color: $c-main;
+                }
+            }
+
+            textarea.form-control {
+                resize: unset;
+                height: 200px;
+            }
+        }
+
+        button {
+            width: 130px;
+            height: 50px;
+            background-color: $c-main;
+            color: $c-white;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+//? Footer
+.footer {
+    background-color: $c-white-2;
+
+    .quick-links {
+        .nav-link {
+            color: $c-dark;
+        }
+    }
+    
+    .socail-accounts {
+        .link {
+            font-size: 1.5rem;
+            margin-left: 1.5rem;
+            color: $c-dark;
+        }
+    }
+
+    .copy-rights {
+        a {
+            color: $c-dark;
+        }
+
+        p {
+            color: $c-dark;
+        }
+    }
+}

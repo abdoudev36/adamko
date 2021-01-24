@@ -10,7 +10,7 @@ section.page-section {
 
 .text-intro {
   background-color: white;
-  height: 100px;
+  height: 88px;
   border-radius: 60px;
   padding-left: 1rem;
 }
@@ -357,12 +357,12 @@ section.page-section {
   background-color: #fcfcfd;
 }
 .our-news .container .items-box .item {
-  height: 380px;
+  min-height: 470px;
   width: 31.333%;
   overflow: hidden;
 }
 .our-news .container .items-box .item .img {
-  height: 200px;
+  height: 230px;
   background-color: #2f3e46;
 }
 .our-news .container .items-box .item .img img {
@@ -371,9 +371,94 @@ section.page-section {
   opacity: 0.7;
 }
 .our-news .container .items-box .item .title {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #2f3e46;
   font-family: "Merriweather", sans-serif;
+}
+.our-news .container .items-box .item .name, .our-news .container .items-box .item .tag, .our-news .container .items-box .item .date {
+  color: #2f3e46;
+}
+.our-news .container .items-box .item button {
+  width: 120px;
+  height: 50px;
+  background-color: white;
+  color: #e8833b;
+  border-radius: 30px;
+  border: 1px solid;
+  transition: all 0.3 ease-in-out;
+}
+.our-news .container .items-box .item button:hover {
+  background-color: #e8833b;
+  color: #fcfcfd;
+}
+.our-news .container .see-all {
+  width: 130px;
+  height: 50px;
+  background-color: #e8833b;
+  color: #fcfcfd;
+}
+
+.contact-us {
+  background-color: white;
+}
+.contact-us .contact-details {
+  width: 50%;
+}
+.contact-us .contact-details .item {
+  min-height: 80px;
+  border-radius: 50px;
+}
+.contact-us .contact-details .item div .icon {
+  font-size: 1.3rem;
+}
+.contact-us .contact-form {
+  width: 50%;
+  padding: 1rem;
+}
+.contact-us .contact-form h3 {
+  font-size: 1.3rem;
+  font-family: "Merriweather", sans-serif;
+}
+.contact-us .contact-form .form-group {
+  margin-bottom: 1.2rem;
+}
+.contact-us .contact-form .form-group .form-control {
+  height: 50px;
+}
+.contact-us .contact-form .form-group .form-control::placeholder {
+  text-transform: capitalize;
+}
+.contact-us .contact-form .form-group .form-control:focus {
+  box-shadow: 0px 0px 0px 3px rgba(232, 131, 59, 0.5);
+  border-color: #e8833b;
+}
+.contact-us .contact-form .form-group textarea.form-control {
+  resize: unset;
+  height: 200px;
+}
+.contact-us .contact-form button {
+  width: 130px;
+  height: 50px;
+  background-color: #e8833b;
+  color: white;
+}
+
+.footer {
+  background-color: #fcfcfd;
+}
+.footer .quick-links .nav-link {
+  color: #2f3e46;
+}
+.footer .socail-accounts .link {
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+  color: #2f3e46;
+}
+.footer .copy-rights a {
+  color: #2f3e46;
+}
+.footer .copy-rights p {
+  color: #2f3e46;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -4,12 +4,12 @@
     .container {
         .items-box {
             .item {
-                height: 380px;
+                min-height: 470px;
                 width: 31.333%;
                 overflow: hidden;
 
                 .img {
-                    height: 200px;
+                    height: 230px;
                     background-color: $c-dark;
 
                     img {
@@ -20,12 +20,37 @@
                 }
 
                 .title {
-                    font-size: 1.3rem;
+                    font-size: 1.1rem;
                     color: $c-dark;
                     font-family: $f-head;
                 }
 
+                .name, .tag, .date {
+                    color: $c-dark;
+                }
+
+                button {
+                    width: 120px;
+                    height: 50px;
+                    background-color: $c-white;
+                    color: $c-main;
+                    border-radius: 30px;
+                    border: 1px solid;
+                    transition: all 0.3 ease-in-out;
+
+                    &:hover {
+                        background-color: $c-main;
+                        color: $c-white-2;
+                    }
+                }
             }
+        }
+
+        .see-all {
+            width: 130px;
+            height: 50px;
+            background-color: $c-main;
+            color: $c-white-2;
         }
     }
 }
